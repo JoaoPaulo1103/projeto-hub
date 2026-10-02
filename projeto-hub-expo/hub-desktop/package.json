@@ -1,0 +1,27 @@
+{
+  "name": "hub-desktop",
+  "version": "1.0.0",
+  "description": "HUB App para desktop (Electron)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "br.com.suaescola.hubapp.desktop",
+    "productName": "HUB App",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  }
+}

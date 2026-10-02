@@ -1,0 +1,18 @@
+PROJETO DE REFERÊNCIA — HUB App (Parte 2 do roteiro)
+
+hub-app/       app Expo (Android, iOS e Web) — passos 20 a 27
+hub-desktop/   casca Electron para desktop     — passo 28
+
+Para rodar o app:
+  cd hub-app
+  npm install
+  (edite o .env com o IP ou domínio do seu backend)
+  npx expo start
+
+Para rodar o desktop (com o Expo ligado):
+  cd hub-desktop
+  npm install
+  HUB_APP_URL=http://localhost:8081 npm start
+
+Antes do primeiro build na nuvem, troque "br.com.suaescola.hubapp"
+no app.json por um identificador seu e o endereço da API no eas.json.
